@@ -1,0 +1,75 @@
+#packages
+import re
+import sys
+import math
+import time
+import pandas as pd
+import requests #requests : web url에 접근 및 html 받아옴
+from bs4 import BeautifulSoup #url로부터 받아온 html text를 parser하여 원하는 정보 추출
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.keys import Keys
+
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+driver = webdriver.Chrome('chromedriver.exe', options=chrome_options)
+
+data = []
+
+#login page
+url_log = "https://id.payco.com/oauth2.0/authorize?response_type=code&client_id=3RDvvpbFXPDNA2XkpbZc&serviceProviderCode=FRIENDS&redirect_uri=https%3A%2F%2Fedit%2Eincruit%2Ecom%2Fg%5Fcommon%2Fbizcommon%2Fv2%2Fpayco%2Easp%3F1%3D1%26kl%3Dfalse"           
+html_id = "id" #id name
+html_pw = "pw" #pw name
+
+driver.get(url_log)
+driver.implicitly_wait(3) #웹페이지 전체 정보가 넘어올때까지 기다리기
+driver.find_element_by_name('id').send_keys('<bins0617@naver.com>')
+driver.find_element_by_name('pw').send_keys('<159159gkgk*>')
+driver.find_element_by_xpath('//*[@id="loginBtn"]').click() #click login button
+
+#for1:mainpage
+for i in range(289):
+    url = "https://people.incruit.com/interview/intvtable.asp?page="+str(i+1) #interview main page of incruit
+    header = {'Accept-Language':'ko_KR,en;q=0.8'} #Setting Language
+    res = requests.get(url)#get url of main page
+    html = res.text
+    soup_m = BeautifulSoup(html, 'html.parser')    
+    
+    #for2:company page
+    for j in range(20):
+        #get url of company page
+        link = soup_m.select_one("#divintvtable > div.bbsWrap > table > tbody > tr:nth-child("+str(j+1)+") > td:nth-child(3) > div > a")['href']
+        driver.get(link)
+        soup = BeautifulSoup(driver.page_source, 'html.parser')
+        #name of company
+        name = soup.find('span', 'cont short1').find('a').get_text()
+        #sector of company
+        sector = soup.select_one("#section_brief_info > div:nth-child(3) > span.cont.short1").get_text()
+        #print(sector, name)
+        #number of interview
+        n = int(soup.select_one("#incruit_contents > div > div.bbsview_title > span > em").get_text())
+        #while:click page
+        k=1
+        while k < n:
+            try:
+                #date
+                date = soup.select_one("#divIntvTableView > div:nth-child("+str(2*k+1)+") > div:nth-child(2) > span.cont.short1").get_text()
+                print(date)
+                #interview
+                interview = soup.select_one("#divIntvTableView > div:nth-child("+str(2*k+2)+") > div > span:nth-child(2)").get_text()
+                print(interview)
+                #job
+                job = soup.select_one("#divIntvTableView > div:nth-child("+str(2*k+1)+") > div:nth-child(2) > span.cont.short2").get_text()
+                #print(job)
+                data.append([name, sector, date, interview, job])
+                #print(data)
+                k=k+1
+                if (n>5) and (n%5 == 0):
+                    next_page = soup.select_one('#divIntvTableView > p > a.next')
+                    next_page.click()
+            except:
+                print(sys.exc_info)()[0]
+                
