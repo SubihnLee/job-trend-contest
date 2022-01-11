@@ -1,0 +1,1303 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1217.2252                               -->
+<workbook original-version='18.1' source-build='2021.4.2 (20214.21.1217.2252)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='employ' inline='true' name='federated.1wi4rep0rp4mbs0zvtjui1b88rx6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='employ' name='textscan.1htt1r10m2dxag182kwpe0xr2998'>
+            <connection class='textscan' directory='C:/Users/KED_Internet/Desktop/contest/data' filename='employ.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1htt1r10m2dxag182kwpe0xr2998' name='employ.csv' table='[employ#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='industry' ordinal='0' />
+            <column datatype='string' name='year' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='integer' name='num' ordinal='3' />
+            <column datatype='string' name='industry_cd' ordinal='4' />
+            <column datatype='string' name='type_cd' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1htt1r10m2dxag182kwpe0xr2998' name='employ.csv' table='[employ#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='industry' ordinal='0' />
+            <column datatype='string' name='year' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='integer' name='num' ordinal='3' />
+            <column datatype='string' name='industry_cd' ordinal='4' />
+            <column datatype='string' name='type_cd' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[employ.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[industry]</local-name>
+            <parent-name>[employ.csv]</parent-name>
+            <remote-alias>industry</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[employ.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[employ.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num]</local-name>
+            <parent-name>[employ.csv]</parent-name>
+            <remote-alias>num</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>industry_cd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[industry_cd]</local-name>
+            <parent-name>[employ.csv]</parent-name>
+            <remote-alias>industry_cd</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type_cd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type_cd]</local-name>
+            <parent-name>[employ.csv]</parent-name>
+            <remote-alias>type_cd</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='전체합' datatype='integer' name='[Calculation_1342354223090745367]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([num])' />
+      </column>
+      <column caption='sum' datatype='integer' name='[Calculation_1342354223110758438]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([num])' />
+      </column>
+      <column caption='전체' datatype='real' name='[Calculation_2162290830469103622]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='avg([num])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='employ.csv' datatype='table' name='[__tableau_internal_object_id__].[employ.csv_175F3E9CF8F24DD28352BFC3A17E2223]' role='measure' type='quantitative' />
+      <column datatype='string' name='[industry]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;가구내 고용활동 및 달리 분류되지 않은 자가소비 생산활동&quot;' value='기타' />
+          <alias key='&quot;공공행정, 국방 및 사회보장 행정&quot;' value='행정 및 국방' />
+          <alias key='&quot;보건업 및 사회복지 서비스업&quot;' value='보건업 및 사회복지' />
+          <alias key='&quot;사업시설관리, 사업지원 및 임대 서비스업&quot;' value='임대 서비스업' />
+          <alias key='&quot;수도, 하수 및 폐기물 처리, 원료 재생업&quot;' value='원료 재생업' />
+          <alias key='&quot;예술, 스포츠 및 여가관련 서비스업&quot;' value='예술, 스포츠' />
+          <alias key='&quot;전기, 가스, 증기 및 공기조절 공급업&quot;' value='전기 공급업' />
+          <alias key='&quot;전문, 과학 및 기술 서비스업&quot;' value='과학 기술' />
+          <alias key='&quot;협회 및 단체, 수리 및 기타 개인 서비스업&quot;' value='협회 및 단체' />
+        </aliases>
+      </column>
+      <column caption='Industry Cd' datatype='string' name='[industry_cd]' role='dimension' type='nominal' />
+      <column caption='Num' datatype='integer' name='[num]' role='dimension' type='ordinal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Type Cd' datatype='string' name='[type_cd]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+      <column datatype='real' default-format='p0.00%' name='[계산1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([num]) / TOTAL(SUM([num]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column-instance column='[industry]' derivation='None' name='[none:industry:nk]' pivot='key' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[num]' derivation='Sum' name='[pcto:sum:num:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' />
+          <order field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_1342354223090745367]' derivation='User' name='[pcto:usr:Calculation_1342354223090745367:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' />
+          <order field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_1342354223090745367]' derivation='User' name='[pcto:usr:Calculation_1342354223090745367:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_1342354223090745367]' derivation='User' name='[usr:Calculation_1342354223090745367:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' palette='sf_bluegrass' type='palette'>
+            <map to='#27aab0'>
+              <bucket>&quot;정규직&quot;</bucket>
+            </map>
+            <map to='#51d2bb'>
+              <bucket>&quot;한시적&quot;</bucket>
+            </map>
+            <map to='#6fb899'>
+              <bucket>&quot;비정규직&quot;</bucket>
+            </map>
+            <map to='#94e7a8'>
+              <bucket>&quot;비전형&quot;</bucket>
+            </map>
+            <map to='#c7f296'>
+              <bucket>&quot;시간제&quot;</bucket>
+            </map>
+            <map to='#ccb22b'>
+              <bucket>&quot;임금근로자&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[pcto:sum:num:qk:2]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[pcto:usr:Calculation_1342354223090745367:qk:1]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[pcto:usr:Calculation_1342354223090745367:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:Calculation_1342354223090745367:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[pcto:usr:Calculation_1342354223088279573:qk:1]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='employ.csv' id='employ.csv_175F3E9CF8F24DD28352BFC3A17E2223'>
+            <properties context=''>
+              <relation connection='textscan.1htt1r10m2dxag182kwpe0xr2998' name='employ.csv' table='[employ#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='industry' ordinal='0' />
+                  <column datatype='string' name='year' ordinal='1' />
+                  <column datatype='string' name='type' ordinal='2' />
+                  <column datatype='integer' name='num' ordinal='3' />
+                  <column datatype='string' name='industry_cd' ordinal='4' />
+                  <column datatype='string' name='type_cd' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#666666' fontname='한컴 고딕' fontsize='18'>산업 및 고용형태별 취업 현황</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employ' name='federated.1wi4rep0rp4mbs0zvtjui1b88rx6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wi4rep0rp4mbs0zvtjui1b88rx6'>
+            <column caption='0' datatype='integer' name='[Calculation_1342354223040892931]' role='measure' type='quantitative' user:unnamed='시트 1'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='0' datatype='integer' name='[Calculation_1342354223053103111]' role='measure' type='quantitative' user:unnamed='시트 1'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='0' datatype='integer' name='[Calculation_1342354223054053389]' role='measure' type='quantitative' user:unnamed='시트 1'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='sum' datatype='integer' name='[Calculation_1342354223110758438]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([num])' />
+            </column>
+            <column datatype='string' name='[industry]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;가구내 고용활동 및 달리 분류되지 않은 자가소비 생산활동&quot;' value='기타' />
+                <alias key='&quot;공공행정, 국방 및 사회보장 행정&quot;' value='행정 및 국방' />
+                <alias key='&quot;보건업 및 사회복지 서비스업&quot;' value='보건업 및 사회복지' />
+                <alias key='&quot;사업시설관리, 사업지원 및 임대 서비스업&quot;' value='임대 서비스업' />
+                <alias key='&quot;수도, 하수 및 폐기물 처리, 원료 재생업&quot;' value='원료 재생업' />
+                <alias key='&quot;예술, 스포츠 및 여가관련 서비스업&quot;' value='예술, 스포츠' />
+                <alias key='&quot;전기, 가스, 증기 및 공기조절 공급업&quot;' value='전기 공급업' />
+                <alias key='&quot;전문, 과학 및 기술 서비스업&quot;' value='과학 기술' />
+                <alias key='&quot;협회 및 단체, 수리 및 기타 개인 서비스업&quot;' value='협회 및 단체' />
+              </aliases>
+            </column>
+            <column-instance column='[industry]' derivation='None' name='[none:industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='nominal' />
+            <column caption='Num' datatype='integer' name='[num]' role='dimension' type='ordinal' />
+            <column-instance column='[num]' derivation='Sum' name='[pcto:sum:num:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_1342354223040892931]' derivation='Sum' name='[sum:Calculation_1342354223040892931:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1342354223053103111]' derivation='Sum' name='[sum:Calculation_1342354223053103111:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1342354223054053389]' derivation='Sum' name='[sum:Calculation_1342354223054053389:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1342354223110758438]' derivation='User' name='[usr:Calculation_1342354223110758438:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[계산1]' derivation='User' name='[usr:계산1:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='ColumnInPane' />
+            </column-instance>
+            <column-instance column='[계산1]' derivation='User' name='[usr:계산1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='p0.00%' name='[계산1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([num]) / TOTAL(SUM([num]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]'>
+            <groupfilter function='member' level='[none:industry:nk]' member='&quot;부동산업&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;비전형&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;시간제&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;정규직&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;한시적&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' direction='ASC' using='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223040892931:qk]' />
+          <slices>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]</column>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223040892931:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223054053389:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223054053389:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='520' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]' value='false' />
+            <format attr='display' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' value='false' />
+            <format attr='display' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223053103111:ok]' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' value='산업군'>
+              <formatted-text>
+                <run>산업군</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]' value='년도'>
+              <formatted-text>
+                <run>년도</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='한컴산뜻돋움' />
+                <format attr='font-size' value='15' />
+                <format attr='color' value='#f1ce63' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='size' value='1.9010497331619263' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='520' />
+                <format attr='maxwidth' value='520' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='646' />
+                <format attr='maxheight' value='646' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223040892931:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' />
+              <wedge-size column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[pcto:sum:num:qk]' />
+              <text column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' />
+              <text column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:계산1:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='한컴산뜻돋움' />
+                <format attr='font-size' value='15' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#d3b348' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='size' value='1.9010497331619263' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223054053389:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' />
+              <text column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:Calculation_1342354223110758438:qk]' />
+              <lod column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:계산1:qk:3]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='20' />
+                <format attr='text-decoration' value='underline' />
+                <format attr='font-family' value='한컴 고딕' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='size' value='1.1534254550933838' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>(([federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok] / ([federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk] / [federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223053103111:ok])) * ([federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223040892931:qk] + [federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[sum:Calculation_1342354223054053389:qk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0FCBEA20-5526-4D4A-AAD7-9616B5D673FD}' />
+    </worksheet>
+    <worksheet name='3-1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employ' name='federated.1wi4rep0rp4mbs0zvtjui1b88rx6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wi4rep0rp4mbs0zvtjui1b88rx6'>
+            <column-instance column='[num]' derivation='Sum' name='[cum:sum:num:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column datatype='string' name='[industry]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;가구내 고용활동 및 달리 분류되지 않은 자가소비 생산활동&quot;' value='기타' />
+                <alias key='&quot;공공행정, 국방 및 사회보장 행정&quot;' value='행정 및 국방' />
+                <alias key='&quot;보건업 및 사회복지 서비스업&quot;' value='보건업 및 사회복지' />
+                <alias key='&quot;사업시설관리, 사업지원 및 임대 서비스업&quot;' value='임대 서비스업' />
+                <alias key='&quot;수도, 하수 및 폐기물 처리, 원료 재생업&quot;' value='원료 재생업' />
+                <alias key='&quot;예술, 스포츠 및 여가관련 서비스업&quot;' value='예술, 스포츠' />
+                <alias key='&quot;전기, 가스, 증기 및 공기조절 공급업&quot;' value='전기 공급업' />
+                <alias key='&quot;전문, 과학 및 기술 서비스업&quot;' value='과학 기술' />
+                <alias key='&quot;협회 및 단체, 수리 및 기타 개인 서비스업&quot;' value='협회 및 단체' />
+              </aliases>
+            </column>
+            <column-instance column='[industry]' derivation='None' name='[none:industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Num' datatype='integer' name='[num]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]'>
+            <groupfilter function='member' level='[none:industry:nk]' member='&quot;건설업&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;정규직&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;시간제&quot;</bucket>
+              <bucket>&quot;한시적&quot;</bucket>
+              <bucket>&quot;비전형&quot;</bucket>
+              <bucket>&quot;정규직&quot;</bucket>
+              <bucket>&quot;비정규직&quot;</bucket>
+              <bucket>&quot;임금근로자&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]</column>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[cum:sum:num:qk]' field-type='quantitative' max='9143' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[cum:sum:num:qk]' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' />
+              <text column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='함초롬돋움' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[cum:sum:num:qk]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[cum:sum:num:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]</field>
+                  <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</field>
+                  <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[cum:sum:num:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;건설업&quot;</value>
+                <value>&quot;정규직&quot;</value>
+                <value>3926</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5' y='26' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{4B69C778-5094-41C3-B22B-F8E00B174031}' />
+    </worksheet>
+    <worksheet name='3-2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employ' name='federated.1wi4rep0rp4mbs0zvtjui1b88rx6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wi4rep0rp4mbs0zvtjui1b88rx6'>
+            <column caption='전체' datatype='real' name='[Calculation_2162290830469103622]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg([num])' />
+            </column>
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Num' datatype='integer' name='[num]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2162290830469103622]' derivation='User' name='[usr:Calculation_2162290830469103622:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;비전형&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;시간제&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;정규직&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;한시적&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' direction='ASC' using='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:Calculation_2162290830469103622:qk]' />
+          <slices>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:Calculation_2162290830469103622:qk]' field-type='quantitative' max='1200.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:Calculation_2162290830469103622:qk]' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[usr:Calculation_2162290830469103622:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0A5ACDAB-9E0C-419A-94B4-763D6AFF2F79}' />
+    </worksheet>
+    <worksheet name='시트 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employ' name='federated.1wi4rep0rp4mbs0zvtjui1b88rx6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wi4rep0rp4mbs0zvtjui1b88rx6'>
+            <column datatype='string' name='[industry]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;가구내 고용활동 및 달리 분류되지 않은 자가소비 생산활동&quot;' value='기타' />
+                <alias key='&quot;공공행정, 국방 및 사회보장 행정&quot;' value='행정 및 국방' />
+                <alias key='&quot;보건업 및 사회복지 서비스업&quot;' value='보건업 및 사회복지' />
+                <alias key='&quot;사업시설관리, 사업지원 및 임대 서비스업&quot;' value='임대 서비스업' />
+                <alias key='&quot;수도, 하수 및 폐기물 처리, 원료 재생업&quot;' value='원료 재생업' />
+                <alias key='&quot;예술, 스포츠 및 여가관련 서비스업&quot;' value='예술, 스포츠' />
+                <alias key='&quot;전기, 가스, 증기 및 공기조절 공급업&quot;' value='전기 공급업' />
+                <alias key='&quot;전문, 과학 및 기술 서비스업&quot;' value='과학 기술' />
+                <alias key='&quot;협회 및 단체, 수리 및 기타 개인 서비스업&quot;' value='협회 및 단체' />
+              </aliases>
+            </column>
+            <column-instance column='[industry]' derivation='None' name='[none:industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[num]' derivation='None' name='[none:num:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='nominal' />
+            <column caption='Num' datatype='integer' name='[num]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]'>
+            <groupfilter function='member' level='[none:industry:nk]' member='&quot;건설업&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;비전형&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;시간제&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;정규직&quot;' />
+              <groupfilter function='member' level='[none:type:nk]' member='&quot;한시적&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;시간제&quot;</bucket>
+              <bucket>&quot;한시적&quot;</bucket>
+              <bucket>&quot;비전형&quot;</bucket>
+              <bucket>&quot;정규직&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</column>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:qk]' field-type='quantitative' major-origin='0' major-spacing='1000' minor-origin='0' minor-spacing='250' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' value='102' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]' value='0' />
+            <format attr='display' field='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-max' value='false' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-min' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:qk]</rows>
+        <cols>([federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok] / [federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk])</cols>
+      </table>
+      <simple-id uuid='{07B41676-CC3D-411A-839C-005738D04E4C}' />
+    </worksheet>
+    <worksheet name='시트 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employ' name='federated.1wi4rep0rp4mbs0zvtjui1b88rx6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wi4rep0rp4mbs0zvtjui1b88rx6'>
+            <column-instance column='[num]' derivation='None' name='[none:num:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='nominal' />
+            <column caption='Num' datatype='integer' name='[num]' role='dimension' type='ordinal' />
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]'>
+            <groupfilter function='member' level='[none:year:ok]' member='&quot;2018&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FC678FF8-C232-45C8-8E79-6A258544D042}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='대시보드 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3ED0C03E-8E09-44FA-B562-2F6E31BBCA35}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='2'>
+      <cards>
+        <edge name='left'>
+          <strip size='149'>
+            <card type='pages' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card mode='dropdown' param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]' type='filter' />
+          </strip>
+          <strip size='2147483647'>
+            <card mode='dropdown' param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' type='filter' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='filters' />
+            <card pane-specification-id='4' param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:ok]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B151F297-A251-45BB-A9F5-A18EC2361681}' />
+    </window>
+    <window class='dashboard' name='대시보드 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{AD8EC7B0-B1CF-4CB8-BE3F-91DF78A6C2FA}' />
+    </window>
+    <window class='worksheet' name='시트 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]' type='filter' />
+            <card param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' type='filter' />
+            <card pane-specification-id='4' param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:ok]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3003707A-3326-4EE3-9A22-E71A1AC76599}' />
+    </window>
+    <window class='worksheet' name='3-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:industry:nk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:ok]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{0B2A088D-C0DD-47D3-8E53-2F412309216F}' />
+    </window>
+    <window class='worksheet' name='3-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:Calculation_2162290830467784706:qk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:Calculation_2162290830468759555:qk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:Calculation_2162290830468800516:qk]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:ok]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E47726EA-024D-4110-89C6-66EB5CA94A51}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:num:ok]</field>
+            <field>[federated.1wi4rep0rp4mbs0zvtjui1b88rx6].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E1E6E291-8901-436E-9464-D7B6131AA99C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='3-1' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAADACAYAAAC02WUGAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABtUlEQVR4nO3bMQrDMBjF4LZ0zf0PGvDqHKFe0g9iaf4HIezxveec87UxHy2gKYAW0BRA
+      C2gKoAU0PwOMMf7hwegFaAFNAbSApgBaQFMALaD5rhyd53m3B2MpwHEcd3swtv8CBdACmgJo
+      AU0BtICmAFpAUwAtoCmAFtAUQAtoCqAFNAXQApoCaAFNAbSApgBaQFMALaApgBbQFEALaAqg
+      BTQF0AKaAmgBTQG0gKYAWkBTAC2gKYAW0BRAC2gKoAU0BdACmgJoAU0BtICmAFpAUwAtoNk+
+      QOvxlaPW4w+mAFpAUwAtoCmAFtAUQAtoCqAFNAXQApoCaAFNAbSApgBaQFMALaApgBbQFEAL
+      aAqgBTQF0AKaAmgBTQG0gKYAWkBTAC2gKYAW0BRAC2gKoAU0BdACmgJoAU0BtICmAFpAUwAt
+      oCmAFtAUQAtoCqAFNI2nV44aTz+YAmgBTQG0gKYAWkBTAC2gKYAW0BRAC2gKoAU0BdACmgJo
+      AU0BtICmAFpAUwAtoCmAFtAUQAtoCqAFNAXQApoCaAFNAbSApgBaQFMALaApgBbQFEALaAqg
+      BTQF0AKa7QNcdPIRaqKETacAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='3-2' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAADACAYAAAC02WUGAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACC0lEQVR4nO3csU3DUBgAYYPoUHoWoKRiGIZgE3qGoGEmSiqaiHSRqZMiWHLiT+C77kl+
+      0vn07Oq3r8ZxHIcVc60FNAXQApoCaAFNAbSA5ua3C3a73bDf75dwIfwaYBiGYbPZXNqDsfpH
+      oABaQFMALaApgBbQFEALaAqgBTQF0AKaAmgBTQG0gKYAWkBTAC2gKYAW0BRAC2gKoAU0BdAC
+      mgJoAU0BtICmAFpAUwAtoCmAFtAUQAtoCqAFNKsPMGlY+hSvn2/n8FiM57ung/WkANvt9iIy
+      guN7mT8u/z3LZ3GO72X174ACaAFNAbSApgBaQFMALaApgBbQFEALaAqgBTQF0AKaAmgBTQG0
+      gKYAWkBTAC2gKYAW0BRAC2gKoAU0BdACmgJoAU0BtICmAFpAUwAtoCmAFtAUQAtoGpefsqlx
+      +X/M7E9mHm+/zuHBWP0JKIAW0BRAC2gKoAU0BdACmgJoAU0BtICmAFpAUwAtoCmAFtAUQAto
+      CqAFNAXQApoCaAFNAbSApgBaQFMALaApgBbQFEALaAqgBTQF0AKaAmgBTePyUzadHJf/Y20a
+      lz+iAFpAUwAtoCmAFtAUQAtoCqAFNAXQApoCaAFNAbSApgBaQFMALaApgBbQFEALaAqgBTSz
+      f6T08nF/Do/FeH84XK/+BBRAC2gKoAU0BdACmgJoAU0BtICmAFpA8wOdIicFb8B2BAAAAABJ
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='대시보드 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='시트 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='44' name='시트 5' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
